@@ -12,6 +12,7 @@
 </head>
 <body>
 <div class="header-overlay"></div>
+
 <header class="v-header container">
     <div class="fullscreen-video-wrap">
         <nav class="navigation">
@@ -28,34 +29,40 @@
 
     </div>
     <div class="header-content">
+
         <div class="logo-title">
-            <a class="ct-btn-scroll ct-js-btn-scroll" href="#section section-a" style="text-decoration:none">KARD Member Profile</a>
+            <a href="#" style="text-decoration:none">KARD Member Profile</a>
         </div>
-        <p>Here you can read all about the K.A.R.D members, what their age is and what their hobbies are.</p>
+        <p>Here you can read all about the KARD members, what their age is and what their hobbies are. ♠🃏♣❤️</p>
+        <a href="#section2"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+
     </div>
 </header>
 
-<section id="section section-a">
-    <div class="container">
-        <img class="members" src="assets/img/members/bm.jpg" alt="somin"/>
-        <h1>BM (Big Matthew)</h1>
-        <p>Stage Name: BM (비엠)<br>
-            English Name: Matthew Kim<br>
-            Korean Names: Kim JinSeok (김진석)/ Kim WooJin (김우진)<br>
-            Position: Main Dancer, Lead Rapper, Vocalist<br>
-            Birthday: October 20, 1992<br>
-            Zodiac Sign: Libra<br>
-            Height: 186 cm (6’1″)<br>
-            Blood Type: A<br>
-            Card Name: King<br>
-            Instagram: <a href="https://www.instagram.com/bigmatthewww/">bigmatthewww</a>
-        </p>
-    </div>
-</section>
+<div class="main" id="section2">
+    <section id="section section-a">
+        <div class="container">
+            <img class="members" src="assets/img/members/bm.jpg" style="margin-top: 20px;" alt="bm"/>
+            <h1>BM (Big Matthew)</h1>
+            <p>Stage Name: BM (비엠)<br>
+                English Name: Matthew Kim<br>
+                Korean Names: Kim JinSeok (김진석)/ Kim WooJin (김우진)<br>
+                Position: Main Dancer, Lead Rapper, Vocalist<br>
+                Birthday: October 20, 1992<br>
+                Zodiac Sign: Libra<br>
+                Height: 186 cm (6’1″)<br>
+                Blood Type: A<br>
+                Card Name: King<br>
+                Instagram: <a href="https://www.instagram.com/bigmatthewww/">bigmatthewww</a>
+            </p>
+        </div>
+    </section>
+</div>
+
 
 <section class="section section-b">
     <div class="container">
-        <img class="members" src="assets/img/members/jseph.jpg" alt="somin"/>
+        <img class="members" src="assets/img/members/jseph.jpg" alt="jseph"/>
         <h1>J.Seph</h1>
         <p>Stage Name: J.Seph (제이셉)<br>
             Birth Name: Kim TaeHyung (김태형)<br>
@@ -104,6 +111,36 @@
         </p>
     </div>
 </section>
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<!--scripts-->
 
 </body>
 </html>

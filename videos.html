@@ -27,14 +27,16 @@
         </video>
     </div>
     <div class="header-content">
-        <h1>K.A.R.D Videos</h1>
-        <p>Watch the latest subbed videos of KARD, also don't forget to check out the official YouTube channel of KARD</p>
-        <a class="ct-btn-scroll ct-js-btn-scroll" href="#section section-videos"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+        <div class="logo-title">
+            <a href="#" style="text-decoration:none">KARD Videos</a>
+        </div>
+        <p>Watch the latest subbed videos of KARD, also don't forget to check out the <a href="https://www.youtube.com/channel/UC5OwlwvsVmf_lXHguB6OYFw"> official YouTube Channel</a></p>
+        <a href="#section-videos"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
 
     </div>
 </header>
 
-<section id="section section-videos">
+<section class="main" id="section-videos">
     <div class="album">
         <div class="container">
             <h1>Subbed videos</h1>
@@ -67,22 +69,52 @@
                 </div>
 
                 <div class="card">
-                    <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <iframe width="355" height="280" src="https://www.youtube.com/embed/BErwlxkYt3A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p class="card-text">[ENG SUB] 170807 NewsAde [2 Minute Personal Introduction]</p>
                 </div>
                 <div class="card">
-                    <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <iframe width="355" height="280" src="https://www.youtube.com/embed/tccc0reDzOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p class="card-text">[ENG SUB] 170801 KARD Show Champion Behind</p>
                 </div>
                 <div class="card">
-                    <img data-src="holder.js/100px280?theme=thumb" alt="Card image cap">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <iframe width="355" height="280" src="https://www.youtube.com/embed/jvxWZhMVNoA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p class="card-text">[ENG SUB] 170803 Mnet My Love My Friend KARD's interview</p>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<!--scripts-->
 
 </body>
 </html>
