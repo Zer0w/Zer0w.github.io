@@ -184,5 +184,13 @@ nav a:hover {
     }
 }
 
-
+@media (max-width: 767px) {
+    .fullscreen-video-wrap {
+        background: url('https://i.imgur.com/z3dnV1R.jpg') center center;
+        background-repeat: no-repeat;
+    }
+    .video {
+        display: none;
+    }
+}
 
