@@ -8,7 +8,7 @@
     margin-left: -49%;
     position:absolute;
     top:0;
-    width:50px;
+    width:40px;
 }
 
 body{
@@ -25,10 +25,8 @@ nav li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
-
     position: relative;
 }
-
 
 .v-header{
     height: 100vh;
@@ -38,7 +36,7 @@ nav li {
 }
 
 .navigation{
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #682e85;
     padding-top:20px;
     padding-bottom:20px;
@@ -113,7 +111,6 @@ nav li {
 }
 
 .nav{
-    background-color: #b325a9;
     color: #fff;
     list-style: none;
     text-align: center;
@@ -141,13 +138,17 @@ header::after {
 }
 
 nav a:hover {
-    color: #bd00d3;
+    color: #e37e1a;
 }
 
 .members {
     border-radius: 50%;
     width: 250px;
     height: 250px;
+}
+
+.members-section{
+    color: #fff700 !important;
 }
 
 .btn{
@@ -159,6 +160,7 @@ nav a:hover {
 }
 
 .section{
+    background: #ffffff;
     padding: 20px 0;
 }
 
@@ -193,4 +195,3 @@ nav a:hover {
         display: none;
     }
 }
-

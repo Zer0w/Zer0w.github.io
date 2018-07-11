@@ -28,7 +28,15 @@ body {
 .album {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: #f7f7f7;
+    /*background-image: url("../img/KARD-blackbg-leaves.png");*/
+    position: relative;
+    /* Full height */
+    height: 100%;
+
+    /*!* Center and scale the image nicely *!*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 }
 
 .album iframe {
