@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/album.css"/>
     <link rel="stylesheet" href="assets/css/fancy-text.css"/>
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/boostrap.css"/>
+
+    <link rel="stylesheet" href="assets/css/navbar.css"/>
     <title>KARD SUBS || Subbed Videos</title>
 </head>
 <body>
 <div class="header-overlay"></div>
 <header class="v-header container">
     <div class="fullscreen-video-wrap">
-        <nav class="navigation">
-            <a href="http://zer0w.github.io">
-                <img src="assets/img/kardlogo.png" alt="logo" class="logo"/></a>
-            <div class="navbar-right">
-                <a href="index.html" style="text-decoration:none">Home</a>
-                <a href="kard-members.html" style="text-decoration:none">Members</a>
-                <a href="#" style="text-decoration:none">Videos</a>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid"><a href="http://zer0w.github.io" class="navbar-left"><img src="assets/img/kardlogo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kard-members.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videos.html">Videos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <video class="video" src="assets/video/VIDEOS.webm" preload="auto" autoplay loop="loop" muted="muted">
@@ -30,8 +44,9 @@
         <div class="logo-title">
             <a href="#" style="text-decoration:none">KARD Videos</a>
         </div>
-        <p>Watch the latest subbed videos of KARD, also don't forget to check out the <a href="https://www.youtube.com/channel/UC5OwlwvsVmf_lXHguB6OYFw"> official YouTube Channel</a></p>
-        <a href="#section-videos"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+        <p>Watch the latest subbed videos of KARD, also don't forget to check out the
+            <a class="link" href="https://www.youtube.com/channel/UC5OwlwvsVmf_lXHguB6OYFw" style="text-decoration: none"> official YouTube Channel</a></p>
+        <a href="#section-videos"><img alt="Arrow Down Icon" src="assets/img/arrow-down.png"></a>
 
     </div>
 </header>
@@ -39,7 +54,7 @@
 <section class="main" id="section-videos">
     <div class="album">
         <div class="container">
-            <h1>Subbed videos</h1>
+            <h1 class="white-color">Subbed videos</h1>
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
                     <a class="page-link" href="#" tabindex="-1">Previous</a>
@@ -138,6 +153,9 @@
         });
     });
 </script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <!--scripts-->
 
 </body>

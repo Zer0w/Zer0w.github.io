@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="assets/css/footer.css"/>
+    <link rel="stylesheet" href="assets/css/navbar.css"/>
     <link rel="stylesheet" href="assets/css/fancy-text.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap core CSS -->
+
     <title>KARD SUBS || Home Page</title>
 </head>
 <body>
@@ -16,13 +24,24 @@
 
 <header class="v-header container">
     <div class="fullscreen-video-wrap">
-        <nav class="navigation">
-            <a href="http://zer0w.github.io">
-                <img src="assets/img/kardlogo.png" alt="logo" class="logo"/></a>
-            <div class="navbar-right">
-                <a href="index.html" style="text-decoration:none">Home</a>
-                <a href="#" style="text-decoration:none">Members</a>
-                <a href="videos.html" style="text-decoration:none">Videos</a>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid"><a href="http://zer0w.github.io" class="navbar-left"><img src="assets/img/kardlogo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kard-members.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videos.html">Videos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <video class="video" src="assets/video/PROFILE.webm" preload="auto" autoplay loop="loop" muted="muted">
@@ -44,8 +63,8 @@
     <section id="section section-bm">
         <div class="container">
             <img class="members" src="assets/img/members/bm.jpg" style="margin-top: 20px;" alt="bm"/>
-            <h1>BM (Big Matthew)</h1>
-            <p>Stage Name: BM (비엠)<br>
+            <h1 class="bm-text">BM (Big Matthew)</h1>
+            <p class="bm-text">Stage Name: BM (비엠)<br>
                 English Name: Matthew Kim<br>
                 Korean Names: Kim JinSeok (김진석)/ Kim WooJin (김우진)<br>
                 Position: Main Dancer, Lead Rapper, Vocalist<br>
@@ -148,6 +167,9 @@
         });
     });
 </script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <!--scripts-->
 
 </body>

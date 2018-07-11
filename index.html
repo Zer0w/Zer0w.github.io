@@ -1,67 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css"/>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/fancy-text.css"/>
-        <link rel="stylesheet" href="assets/css/footer.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <title>KARD SUBS || Home Page</title>
-    </head>
-    <body>
-    <div class="header-overlay"></div>
-    <header class="v-header container">
-        <div class="fullscreen-video-wrap">
-            <nav class="navigation">
-                <a href="http://zer0w.github.io">
-                    <img src="assets/img/kardlogo.png" alt="logo" class="logo"/></a>
-                <div class="navbar-right">
-                    <a href="#" style="text-decoration:none">Home</a>
-                    <a href="kard-members.html" style="text-decoration:none">Members</a>
-                    <a href="videos.html" style="text-decoration:none">Videos</a>
+
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="assets/css/footer.css"/>
+    <link rel="stylesheet" href="assets/css/navbar.css"/>
+    <link rel="stylesheet" href="assets/css/fancy-text.css"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap core CSS -->
+
+    <title>KARD SUBS || Home Page</title>
+</head>
+<body>
+<div class="header-overlay"></div>
+<header class="v-header container">
+    <div class="fullscreen-video-wrap">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid"><a href="http://zer0w.github.io" class="navbar-left"><img
+                    src="assets/img/kardlogo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kard-members.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videos.html">Videos</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <video class="video" src="assets/video/KARD.webm" preload="auto" autoplay loop="loop" muted="muted">
-            </video>
-
-        </div>
-        <div class="header-content">
-            <div class="logo-title">
-                <a href="#" style="text-decoration:none">KARD Subs</a>
             </div>
-            <p>Your #1 library of all KARD subtitled videos in one place, if you like this site make sure you check out the <a href="https://aminoapps.com/c/hidden-kard/home/">Hidden KARD Amino</a></p>
-            <a href="videos.html" class="btn">Recent videos</a>
-        </div>
-    </header>
+        </nav>
 
-    <section class="section section-b">
-        <div class="container">
-            <h1>Who is KARD?</h1>
-            <p>K.A.R.D (카드) is a Korean a co-ed band that consists of 4 members:
-                <a class="members-section" href="kard-members.html#section section-bm">B.M</a>,
-                <a class="members-section" href="kard-members.html#section section-jiwoo">Jiwoo</a>,
-                <a class="members-section" href="kard-members.html#section section-jseph">J.Seph</a>
-                and <a class="members-section" href="kard-members.html#section section-somin">Somin.</a>
-                They are under DSP Media. Before their official debut they are planning to release three project singles (with
-                every new release a hidden member will also be revealed). On December 13, 2016, they released their first
-                project single titled K.A.R.D Project Vol. 1 with the track Oh NaNa featuring ex Kara member, YoungJi as the
-                first hidden member. They officially debuted on July 19, 2017.
-            </p>
-        </div>
-    </section>
+        <video class="video" src="assets/video/KARD.webm" preload="auto" autoplay loop="loop" muted="muted">
+        </video>
 
-    <div class="footer">
-        <div class="container">
-            <a href='https://www.facebook.com/officialkard/'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
-            <a href='https://twitter.com/KARD_Official'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
-            <a href='https://www.youtube.com/channel/UC5OwlwvsVmf_lXHguB6OYFw'><i
-                    class="fa fa-youtube-play fa-3x fa-fw"></i></a>
-        </div>
     </div>
+    <div class="header-content">
+        <div class="logo-title">
+            <a href="#" style="text-decoration:none">KARD Subs</a>
+        </div>
+        <p>Your #1 library of all KARD subtitled videos in one place, if you like this site make sure you check out the
+            <a class="link" href="https://aminoapps.com/c/hidden-kard/home/" style="text-decoration:none">Hidden KARD Amino</a></p>
+        <a href="videos.html" class="btn">Recent videos</a>
+    </div>
+</header>
 
-    </body>
+<section class="section section-b">
+    <div class="container">
+        <h1>Who is KARD?</h1>
+        <p>K.A.R.D (카드) is a Korean a co-ed band that consists of 4 members:
+            <a class="members-section" href="kard-members.html#section section-bm">B.M</a>,
+            <a class="members-section" href="kard-members.html#section section-jiwoo">Jiwoo</a>,
+            <a class="members-section" href="kard-members.html#section section-jseph">J.Seph</a>
+            and <a class="members-section" href="kard-members.html#section section-somin">Somin.</a>
+            They are under DSP Media. Before their official debut they are planning to release three project singles
+            (with
+            every new release a hidden member will also be revealed). On December 13, 2016, they released their first
+            project single titled K.A.R.D Project Vol. 1 with the track Oh NaNa featuring ex Kara member, YoungJi as the
+            first hidden member. They officially debuted on July 19, 2017.
+        </p>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="container">
+        <a href='https://www.facebook.com/officialkard/'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
+        <a href='https://twitter.com/KARD_Official'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
+        <a href='https://www.youtube.com/channel/UC5OwlwvsVmf_lXHguB6OYFw'><i
+                class="fa fa-youtube-play fa-3x fa-fw"></i></a>
+    </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
 </html>
