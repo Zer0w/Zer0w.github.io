@@ -3,10 +3,10 @@
     font-weight:900;
     color: white !important;
     padding-top:-20px;
-    position:absolute;
+    position:fixed !important;
     top:0;
     width:100%;
-    z-index:1;
+    z-index:4 !important;
 }
 
 .bg-dark{
