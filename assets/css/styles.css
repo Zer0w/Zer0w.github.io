@@ -104,10 +104,11 @@ header::after {
 
 .members-section{
     color: #fff700 !important;
+    text-shadow: 2px 2px 2px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 }
 
 .btn{
-    background: #b325a9;
+    background: #76a9fc;
     color: #fff;
     font-size: 1.2rem;
     padding: 1rem 2rem;
@@ -132,6 +133,10 @@ header::after {
 .section-d{
     background: #b31e5b;
     color: #fff;
+}
+
+.section-e{
+    background-color: #1b95ff;
 }
 
 @media(max-width: 960px){
